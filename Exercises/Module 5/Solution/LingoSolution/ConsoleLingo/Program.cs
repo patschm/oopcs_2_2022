@@ -18,6 +18,7 @@
             LingoWord wordToBeGuessed = GenerateWord();
 #if DEBUG
             wordToBeGuessed.Show();
+            //wordToBeGuessed[1]
 #endif
             int attempt;
             for (attempt = 1; attempt <= MAX_ATTEMPTS; attempt++)

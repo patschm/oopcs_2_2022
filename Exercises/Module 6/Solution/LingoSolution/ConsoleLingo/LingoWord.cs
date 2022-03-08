@@ -56,7 +56,7 @@ namespace ConsoleLingo
             // Hint: First check for the exact characters, then for the partial characters
             for (int i = 0; i < guess.Count; i++)
             {
-                LingoCharacter guessChar = guess[i]!;
+                LingoCharacter guessChar = resulting[i]!;
                 foreach (LingoCharacter targetChar in targetWord)
                 {
                     if (LingoCharacter.ExactlyEqual(targetChar, guessChar))
@@ -68,7 +68,7 @@ namespace ConsoleLingo
             }
             for (int i = 0; i < guess.Count; i++)
             {
-                LingoCharacter guessChar = guess[i]!;
+                LingoCharacter guessChar = resulting[i]!;
                 foreach (LingoCharacter thisChar in targetWord)
                 {
                     if (!guessChar.IsExact() &&

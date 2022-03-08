@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LampApp
 {
     // Dit is de blauwdruk van een lamp
-    class Lamp
+    public class Lamp
     {
         // Eigenschappen leg je vast in fields.
         //private ConsoleColor kleur = ConsoleColor.Yellow;
@@ -40,7 +40,9 @@ namespace LampApp
         }
 
         // Gedrag leg je vast in methods. (Function or Procedures)
-        public void Aan()
+        // Virtual maakt het gedrag polymorf-ready.
+        // Een afgeleide class kan (als hij dat wenst) een override doen.
+        public virtual void Aan()
         {
             Console.BackgroundColor = Kleur;
             Console.WriteLine($"De lamp is aan ({intensiteit} lumen)");
