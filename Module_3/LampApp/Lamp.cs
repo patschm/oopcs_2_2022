@@ -10,16 +10,40 @@ namespace LampApp
     class Lamp
     {
         // Eigenschappen leg je vast in fields.
-        public ConsoleColor kleur = ConsoleColor.Yellow;
-        public int intensiteit = 200;
-        public float verbruik;
-        public string naam;
+        //private ConsoleColor kleur = ConsoleColor.Yellow;
+        private uint intensiteit = 200;
+
+        public float Verbruik
+        {
+            get
+            {
+                return 150 * intensiteit;
+            }
+        }
+        // Auto-generating property
+        public ConsoleColor Kleur { get; set; }
+        public string Naam { get; set; }
+
+        public uint Intensiteit
+        {
+            set
+            {
+                if (value >= 0 && value < 1000)
+                {
+                    intensiteit = value;
+                }
+            }
+            get
+            {
+                return intensiteit;
+            }
+        }
 
         // Gedrag leg je vast in methods. (Function or Procedures)
         public void Aan()
         {
-            Console.BackgroundColor = kleur;
-            Console.WriteLine("De lamp is aan");
+            Console.BackgroundColor = Kleur;
+            Console.WriteLine($"De lamp is aan ({intensiteit} lumen)");
         }
         public void Uit()
         {
@@ -28,10 +52,10 @@ namespace LampApp
         }
 
         // Constructors zijn bedoeld om fields van een initiele waarde te voorzien.
-        public Lamp(int lm, ConsoleColor kl)
+        public Lamp(uint lm, ConsoleColor kl)
         {
-            this.intensiteit = lm;
-            kleur = kl;
+            this.Intensiteit = lm;
+            Kleur = kl;
         }
         public Lamp() : this(100, ConsoleColor.Yellow)
         {
