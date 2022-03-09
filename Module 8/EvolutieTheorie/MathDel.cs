@@ -1,0 +1,1 @@
+﻿public delegate int MathDel(int a, int b);

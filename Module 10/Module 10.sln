@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fouten", "Fouten\Fouten.csproj", "{93705592-DDAA-4467-9115-AFC272B399A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RekenLib", "RekenLib\RekenLib.csproj", "{E3972AC0-F8B2-4EFD-BE9F-0C2910CBE530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93705592-DDAA-4467-9115-AFC272B399A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93705592-DDAA-4467-9115-AFC272B399A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93705592-DDAA-4467-9115-AFC272B399A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93705592-DDAA-4467-9115-AFC272B399A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3972AC0-F8B2-4EFD-BE9F-0C2910CBE530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3972AC0-F8B2-4EFD-BE9F-0C2910CBE530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3972AC0-F8B2-4EFD-BE9F-0C2910CBE530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3972AC0-F8B2-4EFD-BE9F-0C2910CBE530}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD0B2D94-D769-46F5-ACCB-8D2941486F1F}
+	EndGlobalSection
+EndGlobal
